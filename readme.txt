@@ -5,14 +5,14 @@ Requires at least: 1.5
 Tested up to: 2.8.4
 Stable tag: trunk
 
-Simple plugin which allows you to **mass edit the description fields** of your choice.
+Simple plugin which allows you to mass edit the description fields of your choice.
 
 == Description ==
 
 Simple plugin which allows you to **mass edit the description fields** of your choice.
 
 [Support](http://folhttp://foliovision.com/seo-tools/wordpress/plugins/foliopress-descriptions/) |
-[Change Log](http://foliovision.com/seo-tools/wordpress/plugins/foliopress-descriptions/changelog/) |
+[Change Log](http://foliovision.com/seo-tools/wordpress/plugins/foliopress-descriptions/changelog/)
 
 Supported description fields:
 
