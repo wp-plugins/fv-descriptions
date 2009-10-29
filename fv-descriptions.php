@@ -4,13 +4,14 @@ Plugin Name: Foliopress Descriptions
 Plugin URI: http://foliovision.com/seo-tools/wordpress/plugins/fv-descriptions/
 Description: Mass edit descriptions for every post, page or category page. Supports post excerpt, Thesis and All In One SEO meta description fields.
 Author: Foliovision
-Version: 1.2
+Version: 1.3
 Author URI: http://foliovision.com
 
 Copyright (c) 2009 Foliovision (http://foliovision.com)
 
 Changelog:
 
+29/10/09 -  Bug fixes
 31/03/09 -  Fixed to work with WP 2.7
 */
 
@@ -515,9 +516,9 @@ function manage_fv_descriptions_recursive($type, $parent = 0, $level = 0, $eleme
                 <td><?php echo $pad.$element->post_title ?></td>
                 <?php   ///   Modification 23/06/2009  Foliovision?>
                 <?php if($fieldname=='excerpt') : ?>
-                <td><input type="text" title="<?php echo $element->post_description ?>" name="tagdescription_<?php echo $element->ID ?>" id="tagdescription_<?php echo $element->ID ?>" value="<?php echo $element_value; ?>" size="80" /></td>
+                <td><input type="text" title="<?php echo htmlspecialchars( $element->post_description ); ?>" name="tagdescription_<?php echo $element->ID ?>" id="tagdescription_<?php echo $element->ID ?>" value="<?php echo htmlspecialchars ($element_value); ?>" size="80" /></td>
                 <?php else : ?>
-                <td><input type="text" title="<?php echo trim(stripcslashes(get_post_meta($element->ID, $fieldname, true))); ?>" name="tagdescription_<?php echo $element->ID ?>" id="tagdescription_<?php echo $element->ID ?>" value="<?php echo trim(stripcslashes(get_post_meta($element->ID, $fieldname, true))); ?>" size="80" /></td>
+                <td><input type="text" title="<?php echo htmlspecialchars( trim(stripcslashes(get_post_meta($element->ID, $fieldname, true))) ); ?>" name="tagdescription_<?php echo $element->ID ?>" id="tagdescription_<?php echo $element->ID ?>" value="<?php echo htmlspecialchars( trim(stripcslashes(get_post_meta($element->ID, $fieldname, true))) ); ?>" size="80" /></td>
                 <?php endif; ?>
                 <?php   ///   End of modifications ?>
                 
