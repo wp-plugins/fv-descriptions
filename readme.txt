@@ -21,6 +21,36 @@ Supported description fields:
 * Thesis description
 * Wordpress post excerpt
 
+== Changelog ==
+
+= Version 1.2 =
+
+* current version
+* first public release
+* support for new All in One SEO Pack and [FV All in One SEO Pack](http://foliovision.com/seo-tools/wordpress/plugins/fv-all-in-one-seo-pack/)
+
+= Version 1.1 =
+
+* Thesis support added
+
+= Version 1.0 =
+
+* Wordpress 2.7 support
+* Interface revision
+
+= Version 0.8: =
+
+* fixed bug when editing page descriptions
+
+= Version 0.7 =
+
+* All in One SEO Pack
+* The plugin is used on all of our sites to mass edit post excerpts
+
+= Older versions =
+
+* there were already some similar plugins available but  we wanted something more lightweight
+
 == Installation ==
 
 You can use the built in installer and upgrader, or you can install the plugin
