@@ -4,13 +4,14 @@ Plugin Name: Foliopress Descriptions
 Plugin URI: http://foliovision.com/seo-tools/wordpress/plugins/fv-descriptions/
 Description: Mass edit descriptions for every post, page or category page. Supports post excerpt, Thesis and All In One SEO meta description fields.
 Author: Foliovision
-Version: 1.3
+Version: 1.3.1
 Author URI: http://foliovision.com
 
 Copyright (c) 2009 Foliovision (http://foliovision.com)
 
 Changelog:
 
+20/10/10 -  Bug fix for categories
 29/10/09 -  Bug fixes
 31/03/09 -  Fixed to work with WP 2.7
 */
@@ -117,10 +118,11 @@ function manage_fv_descriptions()
 				  //echo '<hr />'.$matches[1].'. '.$description.'<br />';
 				//$table_name = $wpdb->prefix . "categories";
 				$category = get_category($matches[1], ARRAY_A);
-				$category = add_magic_quotes($category);
+				//$category = add_magic_quotes($category);
 				  //var_dump($category);
 				  //echo '<hr />';
 				$category['description'] = $description;
+				//var_dump( $category );
 				  //var_dump($category);
 				wp_insert_category($category);
 				

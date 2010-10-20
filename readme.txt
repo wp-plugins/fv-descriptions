@@ -22,6 +22,14 @@ Supported description fields:
 
 == Changelog ==
 
+= Version 1.3.1 = 
+
+* category bugfix
+
+= Version 1.3 =
+
+* bug fixes
+
 = Version 1.2 =
 
 * current version
